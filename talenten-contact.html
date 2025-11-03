@@ -483,11 +483,83 @@ Mail: <a href="mailto:info@emma-at-work.nl">info@emma-at-work.nl</a></p>
                 </div>
                                     <div class="large-5 cell center color-background">
                         <div class="text-padding">
-                            
+
+<!-- @@@@@@@@@@@@@ -->
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://emmaatwork--develop.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DS800000CCWyA" method="POST">
+
+<input type=hidden name="orgid" value="00DS800000CCWyA">
+<input type=hidden name="retURL" value="http://emma-at-work.nl">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="richard@emma-at-work.nl">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="company">Company</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Problem">Problem</option>
+<option value="Feature Request">Feature Request</option>
+<option value="Question">Question</option>
+</select><br>
+
+<label for="status">Status</label><select  id="status" name="status"><option value="">--None--</option><option value="On Hold">On Hold</option>
+<option value="Escalated">Escalated</option>
+<option value="Closed">Closed</option>
+<option value="New">New</option>
+</select><br>
+
+<label for="reason">Case Reason</label><select  id="reason" name="reason"><option value="">--None--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
+<option value="Complex functionality">Complex functionality</option>
+<option value="Existing problem">Existing problem</option>
+<option value="Instructions not clear">Instructions not clear</option>
+<option value="New problem">New problem</option>
+</select><br>
+
+<label for="priority">Priority</label><select  id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select><br>
+
+<label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="012WV000001bHJ9">Coachvraag</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
+<!-- @@@@@@@@@@@@@ -->
+							
                 <div class='gf_browser_safari gf_browser_iphone gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_8' style='display:none'><div id='gf_8' class='gform_anchor' tabindex='-1'></div>
                         <div class='gform_heading'>
                             <h2 class="gform_title">Stel je vraag!</h2>
-                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_8' id='gform_8'  action='/talenten-contact/#gf_8' data-formid='8' novalidate>
+
+				
+						
+						</div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_8' id='gform_8'  action='/talenten-contact/#gf_8' data-formid='8' novalidate>
                         <div class='gform-body gform_body'><div id='gform_fields_8' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_8_16" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_8_16'>Phone</label><div class='ginput_container'><input name='input_16' id='input_8_16' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_8_16'>Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd.</div></div><fieldset id="field_8_5" class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_hidden"  ><div class="admin-hidden-markup"><i class="gform-icon gform-icon--hidden" aria-hidden="true" title="Dit veld is verborgen bij het bekijken van het formulier"></i><span>Dit veld is verborgen bij het bekijken van het formulier</span></div><legend class='gfield_label gform-field-label' >Neem contact met mij op</legend><div class='ginput_container ginput_container_radio'><div class='gfield_radio' id='input_8_5'>
 			<div class='gchoice gchoice_8_5_0'>
 					<input class='gfield-choice-input' name='input_5' type='radio' value='Check' checked='checked' id='choice_8_5_0' onchange='gformToggleRadioOther( this )'    />
