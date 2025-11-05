@@ -1,0 +1,25 @@
+<template>
+<!--    <lightning-card title="Upcoming Trainings" icon-name="standard:education"> -->
+        <!-- SLDS grid container with wrapping -->
+        <div class="slds-grid slds-wrap achtergrond">
+       
+            <!-- Loop through trainings -->
+            <template for:each={trainings} for:item="t">
+                <!-- Each block takes 1/4 of the row on large screens -->
+                <div key={t.Id} class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-around_small">
+                   
+                    <!-- Lightning card for each training -->
+                    <lightning-card variant="narrow" class="custom-card">
+                        <div class="slds-p-horizontal_small custom-card">
+                            <div class="titel">{t.Name}</div>
+                            <div class="sub-titel"> {t.Sub_Titel__c}</div>
+                            <div class="samenvatting"> {t.Samenvatting__c}</div>
+                            <h3 class="h6"><b>Datum </b> {t.Aanvang__c}</h3>
+                            <lightning-button class="titel" variant="brand-outline" label="SCHRIJF JE GRATIS IN" onclick={handleView}></lightning-button>
+                        </div>
+                    </lightning-card>
+                </div>
+            </template>
+        </div>
+ <!--   </lightning-card> -->
+</template>
